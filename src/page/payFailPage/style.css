@@ -1,0 +1,41 @@
+.page {
+    background-color: #fff;
+}
+
+.img-container{
+    text-align: center;
+    margin: 1.6rem auto 1.066667rem;
+}
+
+.img-container img{
+    width: 4.986667rem;
+}
+
+.result{
+    font-size: .48rem;
+    color: #616A84;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: .96rem;
+}
+
+.desc{
+    text-align: center;
+    padding: 0 .986667rem;
+    color: #B0B4C2;
+    line-height: .586667rem;
+    font-size: .373333rem;
+    margin-bottom: 1.066667rem;
+}
+
+.btn{
+    width: 4rem;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    text-align: center;
+    margin: .453333rem auto;
+    color: #76C067;
+    border: 1px solid #76C067;
+    border-radius: .106667rem;
+    font-size: .373333rem;
+}

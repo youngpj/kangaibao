@@ -1,0 +1,98 @@
+.page {
+    background-color: #fff;
+}
+
+.page-wrapper {
+    position: relative;
+    background-image: linear-gradient(to bottom, #FFFFFF 0, #09C9AB 100%);
+    min-height: 100%;
+    /* background-image: url('../../assets/image/paysuccess-banner.png'); */
+    padding-bottom: .533333rem;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8.533333rem;
+    background-image: url('../../assets/image/paysuccess-banner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 -0.613333rem;
+}
+
+.container {
+    position: relative;
+    margin: 7.466667rem auto 0;
+    width: 95%;
+    border-radius: .16rem;
+    min-height: 7.466667rem;
+    background-color: #fff;
+    padding: 1.2rem .4rem;
+}
+
+.container span.font1 {
+    color: #19574D;
+    font-size: .373333rem;
+}
+
+.container span.font2 {
+    color: #fd8654;
+    font-size: .426667rem;
+}
+
+.container span.font5 {
+    color: #0ab18f;
+    font-size: .426667rem;
+}
+
+.container span.font3 {
+    color: #8aa19e;
+    font-size: .32rem;
+}
+
+.container span.font4 {
+    color: #f99166;
+    font-size: .373333rem;
+}
+
+.container .sec1 {
+    line-height: .693333rem;
+    text-align: center;
+    padding: 0 .266667rem;
+}
+
+.container .sec2 {
+    line-height: .533333rem;
+    text-align: center;
+}
+
+.btn {
+    background: #0DBB94;
+    box-shadow: inset 0 0 .32rem 0 #2B9785;
+    border-radius: .6rem;
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: .533333rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin: .746667rem auto .613333rem;
+}
+
+.atag-container {
+    text-align: center;
+}
+
+.atag {
+    padding: 0 .213333rem;
+    color: #f99166;
+    font-size: .373333rem;
+    border-right: .026667rem solid #DBDBDB;
+}
+
+.atag:last-child {
+    border-right: none;
+}

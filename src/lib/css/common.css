@@ -1,0 +1,34 @@
+* {
+    -webkit-overflow-scrolling: touch;
+    font-family: Arial, Helvetica;
+}
+
+body {
+    text-size-adjust: 100% !important;
+}
+
+input,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.page {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+
+a {
+    color: #74adff;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.flex{
+    display:flex;
+}

@@ -1,0 +1,212 @@
+.page {
+    background-color: #f8f8f8;
+    padding-bottom: 2rem;
+}
+
+.form-title {
+    padding: .346667rem .4rem;
+    font-size: .426667rem;
+    color: #95611F;
+    font-weight: bolder;
+    position: relative;
+}
+
+.form-title-icon {
+    position: absolute;
+    top: .666667rem;
+    right: .4rem;
+    width: .373333rem;
+    height: .213333rem;
+    background: url("../../assets/image/jiantouxia.png") no-repeat center/100%;
+}
+
+.form-title-name {
+    opacity: 0.3;
+    font-family: PingFangSC-Regular;
+    font-size: .373333rem;
+    color: #333333;
+}
+
+.input-container {
+    background-color: #fff;
+    padding: 0 .4rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.493333rem;
+    line-height: 1.493333rem;
+    clear: both;
+}
+
+.footer-btn {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: .48rem;
+    background-color: #fff;
+}
+
+.footer-btn:last-child {
+    color: #fff;
+    background-color: #D6D6D6;
+}
+
+.footer-btn.active {
+    background-image: linear-gradient(48deg, #FFB237 0%, #FF8723 100%);
+}
+
+.agree-group {
+    margin: .266667rem auto;
+}
+
+.idInfo-container {
+    background-color: #F8F8F8;
+    overflow: hidden;
+    padding: .16rem 0;
+}
+
+.idInfo-container .idInfo-item {
+    font-size: .373333rem;
+    color: #333;
+    margin: .16rem .4rem;
+}
+
+.form-container {
+    margin: .266667rem;
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(255, 211, 185, 0.28);
+    border-radius: .266667rem;
+    border: none;
+    padding-bottom: .133333rem;
+}
+
+.changePosition {
+    margin-top: -.533333rem;
+    box-shadow: 0 -1px 4px 0 rgba(223, 168, 136, 0.28);
+}
+.familyBox{
+    flex-wrap: wrap;
+}
+.familyBox>div{
+    overflow: hidden;
+}
+.captcha-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.captcha-modal .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.captcha-container {
+    position: absolute;
+    width: 7.2rem;
+    height: 4.533333rem;
+    border-radius: .32rem;
+    background-color: #fff;
+    top: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.captcha-title {
+    font-size: .426667rem;
+    color: #030303;
+    text-align: center;
+    margin: .266667rem auto .72rem;
+}
+
+.captcha-input-container {
+    position: relative;
+    width: 5.573333rem;
+    height: 1.2rem;
+    border: 1px solid #E5E5E5;
+    margin-left: .506667rem;
+    margin-bottom: .48rem;
+}
+
+.captcha-input-container input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: .346667rem .586667rem;
+    font-size: .426667rem;
+    -webkit-user-select: auto;
+}
+
+.captcha-input-container .pic-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 2.266667rem;
+    border-left: 1px solid #E5E5E5;
+}
+
+.captcha-input-container .pic-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.captcha-btn {
+    margin: 0 auto;
+    width: 3.226667rem;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    color: #fff;
+    background-color: #FF963A;
+    font-size: .48rem;
+    text-align: center;
+    border-radius: .533333rem;
+}
+
+img.captcha-close-btn {
+    position: absolute;
+    top: .346667rem;
+    width: .346667rem;
+    right: .346667rem;
+}
+
+img.captcha-refresh-btn {
+    position: absolute;
+    top: 1.893333rem;
+    width: .4rem;
+    right: .346667rem;
+}
+
+.relation>div {
+    border: 1px solid rgba(151, 151, 151, 0.2);
+    border-radius: .373333rem;
+    background: #fff;
+    height: .64rem;
+    line-height: .64rem;
+    width: 1.413333rem;
+    font-size: .373333rem;
+    color: #333333;
+    text-align: center;
+    margin:0  .186667rem .266667rem 0;
+}
+
+.relation>div.active {
+    background: #95611F;
+    box-shadow: 0 0 4px 0 rgba(92, 177, 255, 0.68);
+    border-radius: 0.4rem;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+}

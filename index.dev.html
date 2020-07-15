@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="https://hm.baidu.com/hm.js?69339608e4aef851f79e483d842f62ed"></script>
+    <!-- <script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/2.5.1/vconsole.min.js"></script> -->
+    <script>
+        var poid = parseUrl("poid");
+        var redirectPath = parseUrl('redirect_path');
+        var oauthLink = location.href.indexOf('health.minshenglife') > -1 ? 'http://www.msjk95596.com/act/wechat/base/access_token/?state=http://health.minshenglife.com/kangebao/index.html' : 'http://test.msjk95596.com/test/act/wechat/base/access_token/?state=http://healthtest.minshenglife.com/kangebao/index.html';
+        // if (!parseUrl('oid')) {
+        //   location.href = oauthLink;
+        // }
+        // 
+        console.log(123)
+        var redirectPath = parseUrl('redirect_path');
+        if (redirectPath) {
+            var url = deleteUrlQuery('redirect_path');
+            window.location.href = url + '#/' + redirectPath;
+        }
+        //没有授权时，如果有poid或者redirect_path，保留并跳转
+        // if (!parseUrl('oid')) {
+        //     if (redirectPath) {
+        //         window.location.href = oauthLink + '?redirect_path=' + redirectPath;
+        //     } else if (poid) {
+        //         window.location.href = oauthLink + '?poid=' + poid;
+        //     } else {
+        //         location.href = oauthLink
+        //     }
+        // } else {
+        //     if (redirectPath) {
+        //         var url = deleteUrlQuery('redirect_path');
+        //         window.location.href = url + '#/' + redirectPath;
+        //     } else if (poid) {
+        //         var url = deleteUrlQuery('');
+        //         window.location.href = url + '#/economy';
+        //     }
+        // }
+
+        function parseUrl(queryKey) {
+            var search = location.search;
+
+            if (search.length > 0 && search.indexOf('?') > -1) {
+                search = search.substring(1);
+                var cArr = search.split('&');
+
+                for (var i = 0, len = cArr.length; i < len; i++) {
+                    var item = cArr[i],
+                        key = cArr[i].split('=')[0],
+                        val = cArr[i].split('=')[1];
+
+                    if (key === queryKey) {
+                        return val;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        function deleteUrlQuery(queryKey) {
+            var search = location.search;
+            var resSearch = '';
+            var queryArr = [].concat(queryKey);
+
+            if (search.length > 0 && search.indexOf('?') > -1) {
+                search = search.substring(1);
+                var cArr = search.split('&');
+
+                for (var i = 0, len = cArr.length; i < len; i++) {
+                    var item = cArr[i],
+                        key = cArr[i].split('=')[0],
+                        val = cArr[i].split('=')[1];
+
+                    if (queryArr.indexOf(key) === -1) {
+                        if (resSearch.length == 0) {
+                            resSearch += '?' + key + '=' + val;
+                        } else {
+                            resSearch += '&' + key + '=' + val;
+                        }
+                    }
+                }
+            }
+
+            return location.origin + location.pathname + resSearch;
+        }
+        window.env = 'prod';
+
+        var fixSafari = function() {
+            setTimeout(function() {
+                var rootFontSize = parseFloat(document.getElementsByTagName('html')[0].style.fontSize);
+
+                if (rootFontSize * 10 !== window.screen.width) {
+                    document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+                }
+            })
+        }
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <title>康e保</title>
+</head>
+
+<body onpageshow="fixSafari(event)">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

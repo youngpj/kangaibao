@@ -1,0 +1,34 @@
+.gold-container {
+    height: 100%;
+    position: relative;
+}
+
+.gold-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.gold-container div {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: .533333rem;
+    font-size: .32rem;
+    font-family: PingFang-SC-Regular;
+    color: rgba(255, 255, 255, 1);
+    line-height: .453333rem
+}
+
+.gold-container p {
+    width: 5.253333rem;
+    height: .586667rem;
+    font-size: .426667rem;
+    font-family: PingFang-SC-Medium;
+    color: rgba(255, 255, 255, 1);
+    line-height: .586667rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: 1.76rem;
+}

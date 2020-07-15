@@ -1,0 +1,28 @@
+.page {
+    background-color: #fff;
+}
+
+header {
+    padding: .373333rem 0;
+    text-align: center;
+    font-size: .426667rem;
+    color: #333333;
+    font-weight: 600;
+}
+
+main {
+    margin: 0 .4rem;
+}
+
+.faq-item:first-child{
+    font-weight: bold;
+}
+
+.faq-item {
+    font-size: .373333rem;
+    color: #666666;
+}
+
+.faq-container{
+    margin-bottom: .666667rem;
+}
